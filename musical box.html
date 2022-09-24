@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="musical box.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!-- background:linear-gradient(to bottom ,rgba(250, 228, 131, 0.726),rgb(223,
+        0, 0))"> -->
+        <audio class="player"><source src="music/M- (1).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player1"><source src="music/M- (2).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player2"><source src="music/M- (3).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player3"><source src="music/M- (4).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player4"><source src="music/M- (5).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player5"><source src="music/M- (6).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player6"><source src="music/M- (11).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player7"><source src="music/M- (7).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player8"><source src="music/M- (8).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player9"><source src="music/M- (9).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <audio class="player10"><source src="music/M- (10).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.</audio>
+        <!-- <audio class="playerA"><source src="music/M- (12).mp3"
+        type="audio/mpeg">Your browser does not support the audio element.</audio>
+        <audio class="playerB"><source src="music/M- (13).mp3" type="audio/mpeg"> Your
+        browser does not support the audio element.</audio> <audio
+        class="playerC"><source src="music/M- (14).mp3" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio> <audio class="playerD"><source
+        src="music/M- (15).mp3" type="audio/mpeg"> Your browser does not support the
+        audio element.</audio> <audio class="playerE"><source src="music/M- (16).mp3"
+        type="audio/mpeg"> Your browser does not support the audio element.</audio>
+        <audio class="playerF"><source src="music/M- (17).mp3" type="audio/mpeg"> Your
+        browser does not support the audio element.</audio> <audio
+        class="playerG"><source src="music/M- (18).mp3" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio> <audio class="playerH"><source
+        src="music/M- (19).mp3" type="audio/mpeg"> Your browser does not support the
+        audio element.</audio> <audio class="playerI"><source src="music/M- (20).mp3"
+        type="audio/mpeg"> Your browser does not support the audio element.</audio>
+        <audio class="playerJ"><source src="music/M- (21).mp3" type="audio/mpeg"> <audio
+        class="playerK"><source src="music/M- (22).mp3" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio> <audio class="playerL"><source
+        src="music/M- (23).mp3" type="audio/mpeg"> <audio class="playerM"><source
+        src="music/M- (24).mp3" type="audio/mpeg"> Your browser does not support the
+        audio element.</audio> <audio class="playerN"><source src="music/M- (25).mp3"
+        type="audio/mpeg"> Your browser does not support the audio element.</audio>
+        <audio class="playerO"><source src="music/M- (26).mp3" type="audio/mpeg"> Your
+        browser does not support the audio element.</audio> <audio
+        class="playerP"><source src="music/M- (27).mp3" type="audio/mpeg"> <audio
+        class="playerQ"><source src="music/M- (28).mp3" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio> <audio class="playerR"><source
+        src="music/M- (29).mp3" type="audio/mpeg"> Your browser does not support the
+        audio element.</audio> <audio class="playerS"><source src="music/M- (30).mp3"
+        type="audio/mpeg"> Your browser does not support the audio element.</audio>
+        <audio class="playerT"><source src="music/M- (31).mp3" type="audio/mpeg"> Your
+        browser does not support the audio element.</audio> <audio
+        class="playerU"><source src="music/M- (32).mp3" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio> <audio class="playerV"><source
+        src="music/M- (33).mp3" type="audio/mpeg"> Your browser does not support the
+        audio element.</audio> <audio class="playerW"><source src="music/M- (34).mp3"
+        type="audio/mpeg"> Your browser does not support the audio element.</audio>
+        <audio class="playerX"><source src="music/M- (35).mp3" type="audio/mpeg"> <!--
+        Your browser does not support the audio element.</audio> -->
+
+        <audio class="player_end">
+            -->
+            <source src="music/soundend.wav" type="audio/wav">
+            Your browser does not support the audio element.</audio>
+
+        <div
+            class="container-fluid"
+            style=" height:120vh; background-image: url(bg2.png); ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div
+                        class="parent"
+                        style="text-align:center; font-family: cursive; color: rgb(255, 255, 255); text-shadow: 2px 2px 5px red;">
+
+                        <div class="element">
+                            <h1>MUSICAL SQUARES</h1>
+                            <label
+                                for="h1"
+                                style="text-align:center; font-family:'Gill Sans'; color: rgb(255, 255, 255);">
+                                <a href="musical square.html">MUSIC & FUN WITH BOXES</a>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="stage">
+                    <figure class="ball">T</figure>
+                    <figure class="ball1">H</figure>
+                    <figure class="ball2">A</figure>
+                    <figure class="ball3">N</figure>
+                    <figure class="ball4">K</figure>
+                    <figure class="ball5"><i class="fas fa-grin-hearts fa-1.5x"></i></figure>
+                    <figure class="ball6">Y</figure>
+                    <figure class="ball7">o</figure>
+                    <figure class="ball8">U</figure>
+                    <figure class="ball9">.</figure>
+
+                    <div
+                        class="col-md-8 container mx-auto pt-2"
+                        style="background:linear-gradient(to bottom ,#f59402b9,rgb(250, 250, 250),rgb(0, 172, 23)); opacity: 0.8;">
+                        <!-- style=" height:auto; margin-top:20px; border: 15px solid transparent;
+                        padding: 15px; border-image-source: url(bg1.jpg);border-image-repeat: round;
+                        border-image-slice: 30;"> -->
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(000, 204, 000)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerA').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerA').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerB').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box1"></div>');
+                            }
+                            $(function () {
+                                $('.box1').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player1').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerB').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerC').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box2"></div>');
+                            }
+                            $(function () {
+                                $('.box2').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player2').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerE').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerF').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box3"></div>');
+                            }
+                            $(function () {
+                                $('.box3').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player3').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerG').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerH').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box4"></div>');
+                            }
+                            $(function () {
+                                $('.box4').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player4').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerI').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerJ').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box5"></div>');
+                            }
+                            $(function () {
+                                $('.box5').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player5').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerK').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerL').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box1"></div>');
+                            }
+                            $(function () {
+                                $('.box6').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player6').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerM').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player7').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box2"></div>');
+                            }
+                            $(function () {
+                                $('.box7').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerN').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerO').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerP').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box3"></div>');
+                            }
+                            $(function () {
+                                $('.box8').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player8').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerQ').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerR').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box4"></div>');
+                            }
+                            $(function () {
+                                $('.box9').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player9').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerS').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerT').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box5"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.player').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerU').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerV').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 20; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerW').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+                        <script>
+                            for (var i = 1; i <= 1; i++) {
+                                document.write('<div class="box"></div>');
+                            }
+                            $(function () {
+                                $('.box').click(function () {
+                                    var check_bg = $(this).css('background-color');
+                                    if (check_bg == 'rgb(204, 204, 204)') {
+                                        $('.player_end').trigger('play');
+                                        $(this).css('background', '#333');
+                                    } else {
+                                        $('.playerX').trigger('play');
+                                        $(this).css('background', '#ccc');
+
+                                    }
+
+                                });
+                            });
+                        </script>
+
+                        <br/>
+                    </div>
+                    <div class="row " style="height:50px; text-align: center; width:100%;">
+                        <div class="col-md-12">
+                            <h4 style="font-family:Snap ITC; color:coral; text-align:center;">"Team J Super 60 project"
+                                <br>
+                                Thanks to Dr.Amrdeep Singh & Er. Vishal Garg for giving us this opporunity .
+                                <br>Special Thanks to Simran Sir also</h4>
+
+                            <h5
+                                style="font-family:Small Fonts'; float:right; color:coral; text-align: end; ">
+                                <strong>
+
+                                    Designed By:-
+                                    <a
+                                        href="https://www.google.co.in/search?q=theavinashraj&rlz=1C1CHBD_enIN820IN820&oq=theavinashraj&aqs=chrome..69i57j69i60l2j69i61j69i65j0.7223j1j7&sourceid=chrome&ie=UTF-8">TEAM J</a>
+                                </h5>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

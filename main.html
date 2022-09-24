@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" href="musical box.css">
+        <style>
+            .box {
+                width: 135px;
+                height: 135px;
+
+                display: inline-block;
+            }
+        </style>
+        <script>
+            function randomGenerator(min, max) {
+                return Math.floor(Math.random() * (max - min) + min);
+            }
+            // function reloadpage(){      location.reload();  }
+            // setInterval(reloadpage,500);
+        </script>
+    </head>
+    <body
+        style="background:linear-gradient(to bottom ,rgba(0, 174, 255, 0.726),white)">
+
+        <div class="container-fluid">
+            <div class="row mx-auto">
+
+                <div
+                    class="col-md-12"
+                    style="text-align:center; font-family: cursive; color: hotpink;">
+                    <h1>MUSICAL SQUARES</h1>
+                    <label
+                        for="h1"
+                        style="text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-left: 20%; color: rgb(71, 71, 70);">MUSIC & FUN WITH BOXES
+                    </label><button
+                    class="button text-light"
+                    style="width:250px; height:12mm; float:right; font-size:20px; border-radius:12px; background:linear-gradient(rgb(241, 241, 241),rgb(251, 255, 0)) ">
+                    <a href="musical box.html">Back to  home</a>
+                </button>
+                    <hr/>
+                </div>
+                <div class="col-md-12 mx-auto">
+                        
+                    <h2 style="color:rgb(143, 150, 137);"> page under construction come again later.....</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped
+                         progress-bar-animated" style="width:55%;">55%</div>
+                    </div>
+                <div
+                    class="col-md-4 mx-auto mt-1 pl-4"
+                    style="width:auto; height:auto;
+              border: 15px solid transparent; padding: 15px; border-image-source: url(bg1.jpg);border-image-repeat: round;
+              border-image-slice: 30;">
+                    <script>
+
+                        for (var i = 1; i <= 9; i++) {
+                            var a = randomGenerator(1, 255);
+                            var b = randomGenerator(1, 255);
+                            var c = randomGenerator(1, 255);
+                            document.write(
+                                "<div class='box' style='background:rgb(" + a + "," + b + "," + c +
+                                ");'></div>"
+                            );
+
+                        }
+                    </script>
+                </div>
+                <div class="row " style="height:100px; width:100%;">
+                    <div class="stage">
+                        <figure class="ball"></figure>
+                        <figure class="ball1"></figure>
+                        <figure class="ball2"></figure>
+                        <figure class="ball3"></figure>
+                        <figure class="ball4"></figure>
+                        <figure class="ball5"></figure>
+                        <figure class="ball6"></figure>
+                        <figure class="ball7"></figure>
+                        <figure class="ball8"></figure>
+                        <figure class="ball9"></figure></div>
+                <script>
+                    $(document).ready(function () {
+                        $('i').click(function () {
+                            $(this).hide(1000);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

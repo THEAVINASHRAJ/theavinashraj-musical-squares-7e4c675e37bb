@@ -1,0 +1,328 @@
+.box {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 2px;
+}
+.box1 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box2 {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box3 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    transition: transform 0.2s;
+    display: inline-block;
+    margin: 2px;
+}
+.box4 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box5 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box5 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box7 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box8 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box9 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box10 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box11 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+.box12 {
+    width: 40px;
+    height: 40px;
+    background: rgb(000,000,000);
+    display: inline-block;
+    margin: 2px;
+}
+
+.box:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@keyframes slide {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    50% {
+        left: 1080px;
+        top: 0;
+    }
+    100% {
+        left: 0;
+        top: 50;
+    }
+}
+.stage {
+    height: 50px;
+    position: relative;
+    min-width: 80px;
+}
+
+.stage:hover .ball {
+    animation: slide 10s linear;
+}
+.stage:hover .ball1 {
+    animation: slide 11s linear;
+}
+.stage:hover .ball2 {
+    animation: slide 12s linear;
+}
+.stage:hover .ball3 {
+    animation: slide 13s linear;
+}
+.stage:hover .ball4 {
+    animation: slide 14s linear;
+}
+.stage:hover .ball5 {
+    animation: slide 15s linear;
+}
+.stage:hover .ball6 {
+    animation: slide 16s linear;
+}
+.stage:hover .ball7 {
+    animation: slide 17s linear;
+}
+.stage:hover .ball8 {
+    animation: slide 18s linear;
+}
+.stage:hover .ball9 {
+    animation: slide 19s linear;
+}
+.stage:hover .ball0 {
+    animation: slide1 19s linear;
+}
+.ball {
+    background: #0ed6bb;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#226e64;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball1 {
+    background: #d60e4a;
+    border-radius: 50%;
+    margin-left: 5%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#5f0923;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball2 {
+    background: #7fd60e;
+    border-radius: 50%;
+    margin-left: 10%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#07921a;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball3 {
+    background: #0e54d6;
+    border-radius: 50%;
+    margin-left: 15%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#031b69;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball4 {
+    background: #f7e708;
+    border-radius: 50%;
+    margin-left: 20%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#7a7c04;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball5 {
+    background: #4a0ed6;
+    border-radius: 50%;
+    margin-left: 25%;
+    height: 50px;
+    position: absolute;
+    width: 50px;text-align: center;
+    color:#faf601;
+    padding-top:5px;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball6 {
+    background: #0ed618;
+    border-radius: 50%;
+    margin-left: 30%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#226e64;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball7 {
+    background: #d60ed6;
+    border-radius: 50%;
+    margin-left: 35%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#520052;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball8 {
+    background: #d60e83;
+    border-radius: 50%;
+    margin-left: 40%;
+    height: 50px;
+    position: absolute;
+    width: 50px;text-align: center;
+    color:#771508;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ball9 {
+    background: #d6150e;
+    border-radius: 50%;
+    margin-left: 45%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    color:#f80067;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parent {
+    /* border: 12px solid #0074d9; */
+    color: #0074d9;
+    padding: 0;
+}
+
+.element {
+    /* border: 1px dotted #000; */
+    /* background-color: #eee; */
+    backface-visibility: initial;
+    padding: 20px;
+    color: #000;
+    position: relative;
+    margin-left: 10px;
+    animation: push ease 5s alternate infinite;
+    animation-delay: 2s;
+}
+
+@keyframes push {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: -100px;
+        top: 100px;
+    }
+    100% {
+        top: 600px;
+        left: 150px;
+    }
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:link {
+  color: rgb(0, 255, 115);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(128, 0, 0);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
